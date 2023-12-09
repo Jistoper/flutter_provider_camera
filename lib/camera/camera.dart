@@ -16,7 +16,7 @@ class _CameraScreenState extends State<CameraScreen> {
     super.initState();
     _controller = CameraController(
       cameras![0], // Get Camera
-      ResolutionPreset.medium, // Resolution
+      ResolutionPreset.max, // Resolution
     );
 
     _initializeControllerFuture = _controller.initialize(); // Init Controller
